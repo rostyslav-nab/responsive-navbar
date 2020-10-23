@@ -1,0 +1,118 @@
+.buttons-collection {
+    button {
+        margin-right: 10px;
+    }
+}
+
+.burger {
+    &:focus{
+        outline: none;
+    }
+    span {
+        background-image: url("../assets/close.png")!important;
+    }
+}
+
+.burger.collapsed {
+    span {
+        background-image: url("../assets/burger.png")!important;
+    }
+}
+
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #ffc900;
+}
+
+
+.dropdown-menu{
+    border: none;
+    background: rgba(255,245,215, 0);
+}
+
+
+.nav-drop{
+    a{
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+    }
+
+
+}
+
+.dropdown-item.active{
+    background: none;
+    color: #000;
+}
+
+.collapse-nav{
+    transition: all 300ms ease-out;
+}
+
+@media (max-width: 479px) {
+    .logo{
+        height: 20px;
+    }
+    .button-custom {
+        height:35px;
+        font-size: 14px;
+    }
+    .buttons-collection {
+        button {
+            margin: 3px;
+        }
+    }
+    .burger {
+        span {
+            width: 1em;
+            height: 1em;
+        }
+    }
+    .dropdown-toggle::after {
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+    .logo{
+        height: 25px;
+    }
+    .dropdown-toggle::after {
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media (min-width: 576px) {
+    .dropdown-toggle::after {
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) {
+    .dropdown-toggle::after {
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) {
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+}
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) {
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
